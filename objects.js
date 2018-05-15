@@ -9,6 +9,9 @@ var updatePlaylist = function(playlist,artist,title) {
 }
 
 var removeFromPlaylist = function(playlist,artist){
-  delete playlist.artist;
+  var check = delete playlist.artist;
+  if(!check)
+   return;
+  else
   return playlist;
 }
