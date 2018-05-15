@@ -7,3 +7,8 @@ var updatePlaylist = function(playlist,artist,title) {
     [artist]:title
   });
 }
+
+var removeFromPlaylist = function(playlist,artist){
+  delete playlist.artist;
+  return playlist;
+}
